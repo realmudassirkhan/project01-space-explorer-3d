@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Space Explorer 3D</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <nav>
+            <a href="#intro">Introduction</a>
+            <a href="#planets">Planets</a>
+            <a href="#facts">Facts</a>
+            <a href="#video">Video</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="scroll-progress">
+            <div class="scroll-progress-bar"></div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="intro">
+
+            <div class="solar-system">
+
+                <div class="sun"></div>
+
+                <!-- Mercury -->
+                <div class="orbit mercury-orbit">
+                    <img src="img/mercury.png" alt="Mercury" class="planet mercury">
+                </div>
+
+                <!-- Venus -->
+                <div class="orbit venus-orbit">
+                    <img src="img/venus.png" alt="Venus" class="planet venus">
+                </div>
+
+                <!-- Earth -->
+                <div class="orbit earth-orbit">
+                    <img src="img/earth.png" alt="Earth" class="planet earth">
+                </div>
+
+                <!-- Mars -->
+                <div class="orbit mars-orbit">
+                    <img src="img/mars.png" alt="Mars" class="planet mars">
+                </div>
+
+                <!-- Jupiter -->
+                <div class="orbit jupiter-orbit">
+                    <img src="img/jupiter.png" alt="Jupiter" class="planet jupiter">
+                </div>
+
+                <!-- Saturn -->
+                <div class="orbit saturn-orbit">
+                    <img src="img/saturn.png" alt="Saturn" class="planet saturn">
+                </div>
+
+                <!-- Uranus -->
+                <div class="orbit uranus-orbit">
+                    <img src="img/uranus.png" alt="Uranus" class="planet uranus">
+                </div>
+
+                <!-- Neptune -->
+                <div class="orbit neptune-orbit">
+                    <img src="img/neptune.png" alt="Neptune" class="planet neptune">
+                </div>
+
+            </div>
+
+            <div class="hero-content">
+
+                <h1>Space Explorer 3D</h1>
+
+                <p>
+                    Explore planets, galaxies and the mysteries of the universe.
+                </p>
+
+                <a href="#planets" class="explore-btn">
+                    Explore Space
+                </a>
+
+            </div>
+
+        </section>
+        <!-- PLANETS SECTION -->
+
+        <section id="planets">
+
+            <h2>Top Planets</h2>
+
+            <div class="items-container">
+
+                <article>
+                    <img src="img/earth.png" alt="Earth">
+
+                    <h3>Earth</h3>
+
+                    <p>
+                        Our home planet and the only known world supporting life.
+                    </p>
+                </article>
+
+                <article>
+                    <img src="img/mars.png" alt="Mars">
+
+                    <h3>Mars</h3>
+
+                    <p>
+                        Known as the Red Planet and a target for future missions.
+                    </p>
+                </article>
+
+                <article>
+                    <img src="img/jupiter.png" alt="Jupiter">
+
+                    <h3>Jupiter</h3>
+
+                    <p>
+                        The largest planet in our solar system.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- FACTS SECTION -->
+
+        <section id="facts">
+
+            <h2>Amazing Space Facts</h2>
+
+            <ul>
+                <li>One day on Venus is longer than one year on Venus.</li>
+                <li>Jupiter has more than 90 known moons.</li>
+                <li>The Sun contains over 99% of the Solar System's mass.</li>
+                <li>Neutron stars are incredibly dense objects.</li>
+                <li>There are billions of galaxies in the observable universe.</li>
+            </ul>
+
+        </section>
+
+        <!-- VIDEO SECTION -->
+
+        <section id="video">
+
+            <h2>Space Documentary</h2>
+
+            <video controls width="100%" preload="metadata">
+
+                <source src="video/space.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+
+            </video>
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+
+        <section id="contact">
+
+            <h2>Contact Us</h2>
+
+            <form id="contactForm">
+
+                <label for="name">Full Name</label>
+
+                <input type="text" id="name" required>
+
+                <label for="email">Email Address</label>
+
+                <input type="email" id="email" required>
+
+                <label for="message">Message</label>
+
+                <textarea id="message" rows="5" required>
+                </textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span>
+            Space Explorer 3D
+        </p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+
+</body>
+
+</html>
